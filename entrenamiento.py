@@ -19,7 +19,7 @@ def load_dataset(sufijo='a'):
     file_names = [sufijo+'/'+arch.name for arch in os.scandir(PATH_IN+sufijo) if arch.is_file()]
     if file_names:
         n = len(file_names)
-        train_n = round(n * 0.80)
+        train_n = round(n * 0.40)
         
         train_urls = file_names[:train_n] # datos de entrenamiento.
         np.random.shuffle(train_urls)
@@ -47,7 +47,7 @@ def entrenar(dataset, epochs, sufijo='a'):
 def testear(data_test, cantidad = 10, sufijo='a'):
     generator = Generator("generator_"+sufijo)
     discriminator = Discriminator("discriminator_"+sufijo)
-    load_models(generator, discriminator)
+    load_models(generator, discriminator, checkpoint_dir="saved_model")
     contador = 0
     for inp_img, re_img in data_test:
         generate_images(generator, discriminator, inp_img, re_img)
