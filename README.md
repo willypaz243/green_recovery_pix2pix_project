@@ -87,7 +87,7 @@ Puede instalar todas estas dependencias mediante el archivo 'requirement.txt'
 ## 4. Comenzando
 _Para usar la aplicacion realize los siguientes pasos._
  - Muevase al directorio de del proyecto.
- - Descargue los [modelos entrenados](https://drive.google.com/drive/folders/1ntseSSRH4cYp20bVY1uQ2QJaJLJa62Bs?usp=sharing) y guardelos en una carpeta con el nombre de "saved_models".
+ - Descargue los modelos entrenados <a href="https://drive.google.com/drive/folders/1ntseSSRH4cYp20bVY1uQ2QJaJLJa62Bs?usp=sharing" target=»_blank»>(click-aquí)</a> y guardelos en una carpeta con el nombre de "**saved_models**".
  - Ejecute la linea la siguiente linea de comando.
  ![Ejemplo](./media/comando.jpg)
 Donde "test_real_images/image_8.jpg" es el directorio de la imagen que desea transformar.
